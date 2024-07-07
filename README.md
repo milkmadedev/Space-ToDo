@@ -38,11 +38,11 @@ Contributions are welcome! Please read our contributing guidelines to get starte
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GPL-3.0 License - see the LICENSE file for details.
 
 ## 📧 Contact
 
-If you have any questions or feedback, feel free to reach out to me at milkmade.dev@gmail.com.
+If you have any questions or feedback, feel free to reach out to me at m@milkmade.dev
 
 ## 🌟 Acknowledgements
 
