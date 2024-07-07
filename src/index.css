@@ -1,0 +1,181 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root {
+  --background: #0A0A0A;
+  --foreground: #ffffff;
+  --primary: #00FFFF;
+  --secondary: #1A1A1A;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Abril Fatface', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Calendar Styles */
+.rbc-calendar {
+  background-color: var(--secondary);
+  border-radius: 0rem;
+  overflow: hidden;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.rbc-toolbar {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.rbc-btn-group button {
+  color: var(--primary) !important;
+  background-color: var(--secondary) !important;
+  border-color: var(--primary) !important;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.rbc-btn-group button:hover {
+  background-color: var(--primary) !important;
+  color: var(--background) !important;
+}
+
+.rbc-active {
+  background-color: var(--primary) !important;
+  color: var(--background) !important;
+}
+
+.rbc-event {
+  background-color: var(--primary) !important;
+  color: var(--background) !important;
+}
+
+.rbc-today {
+  background-color: rgba(0, 255, 255, 0.1) !important;
+}
+
+.rbc-off-range-bg {
+  background-color: var(--secondary) !important;
+}
+
+.rbc-date-cell {
+  color: var(--foreground) !important;
+}
+
+.rbc-toolbar-label {
+  color: var(--primary) !important;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.rbc-header {
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* Todo List Styles */
+.todo-list {
+  background-color: var(--secondary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.todo-item {
+  background-color: var(--background);
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.todo-input {
+  background-color: var(--background);
+  color: var(--foreground);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+}
+
+/* HoverBorderGradient Styles */
+.hover-border-gradient {
+  position: relative;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.hover-border-gradient::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--primary), transparent);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-border-gradient:hover::before {
+  opacity: 1;
+}
+
+/* Background Beams Styles */
+.background-beams {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cccc;
+}
+
+/* Utility classes */
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.font-abril {
+  font-family: 'Abril Fatface', cursive;
+}
